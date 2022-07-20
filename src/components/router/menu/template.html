@@ -1,0 +1,9 @@
+<div class="Menu__wrapper">
+    <nav>
+        <router-link :key="item.path"
+                     :to="item.path"
+                     v-for="item in menuItems">
+            <div class="title__wrapper"> {{ item.title }} </div>
+        </router-link>
+    </nav>
+</div>
